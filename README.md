@@ -6,6 +6,7 @@ Vivi and I have started to build this amazing new slime site using GPT-4 and DAL
 # Running the site locally
 
 ```
+cd public/
 python3 -m http.server
 ```
 
