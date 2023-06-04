@@ -5,6 +5,11 @@ Vivi and I have started to build this amazing new slime site using GPT-4 and DAL
 
 # Running the site locally
 
+```
 python3 -m http.server
+```
 
-navigate to localhost:8000/
+
+Now that the server is running
+open the web browser and enter: localhost:8000/
+
