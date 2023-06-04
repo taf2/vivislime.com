@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* This is a soft grey. Adjust to the color you want. */
+
+    background-image: url('background.png'); /* replace with your actual image URL */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes imageFade {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.product-grid {
+    position: relative;
+    height: calc(100vh - 60px);
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.slime-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: imageFade 20s infinite;
+}
+
+.slime-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slime-image:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slime-image:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slime-image:nth-child(4) {
+    animation-delay: 20s;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    color: black;
+}
