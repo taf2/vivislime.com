@@ -1,3 +1,11 @@
+:root {
+    --card-max-width: 50%;
+    --card-background-color: white;
+    --card-text-color: black;
+    --card-padding: 20px;
+    --card-margin: 20px auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5; /* This is a soft grey. Adjust to the color you want. */
@@ -38,9 +46,9 @@ footer {
     background-color: #f8f9fa;
     text-align: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    opacity: 0.8;
 }
 
 @keyframes imageFade {
@@ -53,7 +61,7 @@ footer {
 .product-grid {
     position: relative;
     height: calc(100vh - 60px);
-    width: 80%;
+    width: var(--card-max-width);
     margin: auto;
     overflow: hidden;
     background-color: white;
@@ -93,11 +101,11 @@ footer {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--card-background-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 80%;
-    color: black;
+    padding: var(--card-padding);
+    margin: var(--card-margin);
+    max-width: var(--card-max-width);
+    color: var(--card-text-color);
 }
